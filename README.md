@@ -3,7 +3,7 @@
 ### What is this?
 ---
 
-This is a game developed by a group of students at ESPM for their conclusion assignment, it is part of a bigger plan which involves a studio that bases its creations on the smart use of artificial intelligence 
+This is a game developed by a group of students at ESPM for their conclusion assignment, it is part of a bigger plan which involves a studio that bases its creations on the creative use of artificial intelligence 
 
 ### Purpose
 ---
