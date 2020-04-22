@@ -8,7 +8,7 @@ This a game developed by a group of students at ESPM for their conclusion assign
 ### Purpose
 ---
 
-Study popular artificial intelligence algorithms inside the game development
+Study popular artificial intelligence algorithms inside game development
 
 ## Sections
 
