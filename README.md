@@ -1,9 +1,9 @@
-Higgs Project
+# Higgs Project
 
 ### What is this?
 ---
 
-This a game developed by a group of students at ESPM for their conclusion assignment, it is part of bigger plan which involves a studio that bases its creations on the smart use of artificial intelligence 
+This is a game developed by a group of students at ESPM for their conclusion assignment, it is part of a bigger plan which involves a studio that bases its creations on the smart use of artificial intelligence 
 
 ### Purpose
 ---
@@ -15,10 +15,46 @@ Study popular artificial intelligence algorithms inside game development
 #### Programming: 
 ---
   The programming team was responsible for implementing all the mechanics inside the Unity Engine, along with studying and developing the insertion of artificial intelligence on these mechanics
-###### Responsável 
+###### Team
   - Cesar Moura Leite Westphal
+  - Allan Urique
 
+#### Game Design
+---
+  Responsible for creating game mechanics and structure the player's experience. Their work includes arranging camera positions, gameplay loop, player reward system, core mechanics and game objectives. 
+##### Team
+  - Allan Urique 
+  - Cesar Moura Leite Westphal
+  - Guilherme Priosti
 
+#### Marketing
+---
+  Focused on market research, organizing and participating in game-related events, competition analysis and pricing. 
+##### Team
+ - Roberto Trocoli
+ - Guilherme Priosti
+ - Fernando Guimarães.
+
+#### Storytelling
+---
+  Storytelling: In charge of creating the game's narrative. Their work goes from working with character and dialogue creation to the story's timeline 
+##### Team
+ - Guilherme Priosti 
+ - Fernando Guimarães
+ - Allan Urique.
+
+#### Design
+---
+ Design: Managing the conceptualization and creaton of visual assets for the game. Includes character modelling, environment creation and concept art for the game.
+##### Team
+ - Allan Urique
+ - Fernando Guimarães
+#### Sound Design
+---
+ Sound design: This area creates soundtracks, sound effects and the recording of dialogue.
+##### Team
+ - Cesar Moura Leite Westphal 
+ - Guilherme Priosti.
   
   ### Contributors
 ---
@@ -29,6 +65,35 @@ Cesar Moura Leite Westphal
 [github](https://github.com/Cesar-mlw) |
 [linkedin](https://www.linkedin.com/in/cesar-moura-leite-westphal-222b57138/) |
 [email](mailto:cesarmlwestphal@gmail.com)
+)</small>
+<img src="team/allan.jpeg" alt="photo"
+	title="Allan Urique" width="150" height="150" />
+Allan Urique
+<small>(
+[artstation](https://www.artstation.com/allanurique) |
+[linkedin](https://www.linkedin.com/in/allan-urique-b3a039190/) |
+[email](mailto:allanurique951@gmail.com)
+)</small>
+<img src="team/roberto.jpeg" alt="photo"
+	title="Roberto Trocoli" width="150" height="150" />
+Roberto Trocoli
+<small>(
+[twitter](https://twitter.com/RobertoTrocoli) |
+[linkedin](https://www.linkedin.com/in/trocoli/) |
+[email](mailto:roberto.trocolineto@gmail.com)
+)</small>
+<img src="team/fernandog.jpeg" alt="photo"
+	title="Fernando Guimarães" width="150" height="150" />
+Fernando Guimarães
+<small>(
+[linkedin](https://www.linkedin.com/in/fernando-guimar%C3%A3es-621473172?originalSubdomain=br) |
+[email](mailto:fernandoguima10@hotmail.com)
+)</small>
+<img src="team/guimaster.jpeg" alt="photo"
+	title="Guilherme Priosti" width="150" height="150" />
+Guilherme Priosti
+<small>(
+[email](mailto:guilhermepriosti@gmail.com)
 )</small>
 
   
@@ -63,7 +128,4 @@ SOFTWARE.
 
 ### Agradecimentos
 ---
- - Equipe Técnica ESPM
- - Carlos Rafael Gimenes Neves  | [LinkedIn](https://www.linkedin.com/in/carlosrafaelgn/) | [GitHub](https://github.com/carlosrafaelgn)
- - Flavio Marques de Azevedo  | [LinkedIn](https://www.linkedin.com/in/flaviomarquesazevedo/)
- - Patricia Dranoff  | [LinkedIn](https://www.linkedin.com/in/pdranoff/)
+
