@@ -37,7 +37,7 @@ Study popular artificial intelligence algorithms inside game development
 
 #### Storytelling
 ---
-  Storytelling: In charge of creating the game's narrative. Their work goes from working with character and dialogue creation to the story's timeline 
+  In charge of creating the game's narrative. Their work goes from working with character and dialogue creation to the story's timeline 
 ##### Team
  - Guilherme Priosti 
  - Fernando Guimarães
@@ -45,13 +45,13 @@ Study popular artificial intelligence algorithms inside game development
 
 #### Design
 ---
- Design: Managing the conceptualization and creaton of visual assets for the game. Includes character modelling, environment creation and concept art for the game.
+ Managing the conceptualization and creaton of visual assets for the game. Includes character modelling, environment creation and concept art for the game.
 ##### Team
  - Allan Urique
  - Fernando Guimarães
 #### Sound Design
 ---
- Sound design: This area creates soundtracks, sound effects and the recording of dialogue.
+ This area creates soundtracks, sound effects and the recording of dialogue.
 ##### Team
  - Cesar Moura Leite Westphal 
  - Guilherme Priosti.
