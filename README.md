@@ -22,7 +22,7 @@ Study popular artificial intelligence algorithms inside the game development
   
   ### Contributors
 ---
-<img src="team/cesar.png" alt="photo"
+<img src="team/cesar.jpg" alt="photo"
 	title="Cesar Westphal" width="150" height="150" />
 Cesar Moura Leite Westphal
 <small>(
