@@ -3,7 +3,7 @@ Higgs Project
 ### What is this?
 ---
 
-This a game developed by a group of students at ESPM for their conclusion assignment, it is part of bigger plan which involves a studio that bases its creations on the smart use of artificial intelligence 
+This is a game developed by a group of students at ESPM for their conclusion assignment, it is part of a bigger plan which involves a studio that bases its creations on the smart use of artificial intelligence 
 
 ### Purpose
 ---
@@ -63,7 +63,4 @@ SOFTWARE.
 
 ### Agradecimentos
 ---
- - Equipe Técnica ESPM
- - Carlos Rafael Gimenes Neves  | [LinkedIn](https://www.linkedin.com/in/carlosrafaelgn/) | [GitHub](https://github.com/carlosrafaelgn)
- - Flavio Marques de Azevedo  | [LinkedIn](https://www.linkedin.com/in/flaviomarquesazevedo/)
- - Patricia Dranoff  | [LinkedIn](https://www.linkedin.com/in/pdranoff/)
+
