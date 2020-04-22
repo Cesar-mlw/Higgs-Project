@@ -106,7 +106,7 @@ Guilherme Priosti
 
 MIT License
 
-Copyright (c) 2019 ESPM Tech - Soul 2019 Group
+Copyright (c) 2019 ESPM Tech - PGT 2020 Group
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
