@@ -100,7 +100,26 @@ Guilherme Priosti
 [email](mailto:guilhermepriosti@gmail.com)
 )</small>
 
-  
+
+### Versions
+---
+The first three stages of our alpha build were assembled during 2020's first semester. We registered the evolution of the project through it's differente stages. Three alpha versions were produced, the following pictures showing the evolution between them.
+
+#### Version 1 - Map Generation
+<img src="version photos/alpha1.png"/>
+
+#### Version 2 - Map Generation
+<img src="version photos/alpha2.png"/>
+<img src="version photos/alpha2-2.png"/>
+
+#### Version 3 - Map Generation
+<img src="version photos/alpha3.png"/>
+<img src="version photos/alpha3-2.png"/>
+
+#### Version 4 - Map Generation
+<img src="version photos/alpha4.png"/>
+<img src="version photos/alpha4-2.png"/>
+
 ### License
 ---
 
