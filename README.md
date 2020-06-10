@@ -120,6 +120,16 @@ The first three stages of our alpha build were assembled during 2020's first sem
 <img src="version photos/alpha4.png"/>
 <img src="version photos/alpha4-2.png"/>
 
+#### Version 1 - Visual Effects
+<img src="version photos/alphafx1.png"/>
+
+#### Version 2 - Visual Effects
+<img src="version photos/alphafx2.png"/>
+
+#### Version 3 - Visual Effects
+<img src="version photos/alphafx3.png"/>
+
+
 ### License
 ---
 
