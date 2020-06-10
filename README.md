@@ -59,7 +59,7 @@ Study popular artificial intelligence algorithms inside game development
   ### Contributors
 ---
 <img src="team/cesar.jpg" alt="photo"
-	title="Cesar Westphal" width="150" height="150" />
+	title="Cesar Westphal" width="200" height="200" />
 Cesar Moura Leite Westphal
 <small>(
 [github](https://github.com/Cesar-mlw) |
@@ -68,7 +68,7 @@ Cesar Moura Leite Westphal
 )</small>
 
 <img src="team/allan.jpeg" alt="photo"
-	title="Allan Urique" width="150" height="150" />
+	title="Allan Urique" width="200" height="200" />
 Allan Urique
 <small>(
 [artstation](https://www.artstation.com/allanurique) |
@@ -77,7 +77,7 @@ Allan Urique
 )</small>
 
 <img src="team/roberto.jpeg" alt="photo"
-	title="Roberto Trocoli" width="100" height="150" />
+	title="Roberto Trocoli" width="200" height="250" />
 Roberto Trocoli
 <small>(
 [twitter](https://twitter.com/RobertoTrocoli) |
@@ -86,7 +86,7 @@ Roberto Trocoli
 )</small>
 
 <img src="team/fernandog.jpeg" alt="photo"
-	title="Fernando Guimarães" width="100" height="150" />
+	title="Fernando Guimarães" width="200" height="250" />
 Fernando Guimarães
 <small>(
 [linkedin](https://www.linkedin.com/in/fernando-guimar%C3%A3es-621473172?originalSubdomain=br) |
@@ -94,7 +94,7 @@ Fernando Guimarães
 )</small>
 
 <img src="team/guimaster.jpeg" alt="photo"
-	title="Guilherme Priosti" width="150" height="150" />
+	title="Guilherme Priosti" width="200" height="200" />
 Guilherme Priosti
 <small>(
 [email](mailto:guilhermepriosti@gmail.com)
