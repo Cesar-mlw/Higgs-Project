@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using csDelaunay;
@@ -15,11 +15,11 @@ public class cityBuilder : MonoBehaviour
 
     private List<RegionBorder> regions = new List<RegionBorder>();// This variable will store the location of the regions and it's borders 
 
-    private List<Vector3> borders = new List<Vector3>();
+    private List<GameObject> borders = new List<GameObject>();
 
     private float bound = 4500; // Variable that controls total area that the city will cover
 
-    private float maxPointdistance = 3500; //basically controls how space the 
+    public float maxPointdistance = 3500; //basically controls how space the 
 
     private Dictionary<Vector2f, Site> sites;
     private List<Edge> edges;
@@ -40,19 +40,53 @@ public class cityBuilder : MonoBehaviour
 
     public void BuildBuildings(){
         //Generate Spawn Locations
-        List<Vector3> spwnLocations = new List<Vector3>();
-        int buildingFootPrint = 3;
-        foreach (RegionBorder reg in regions){
-            for (int i = 0; i < 10; i++){
-                GameObject building = Instantiate(buildings[Random.Range(0, buildings.Length - 1)]);
-                Vector3 spwnPoint = reg.centerPoint + new Vector3(Random.Range(1, 400) * buildingFootPrint, 0, Random.Range(1, 400) * buildingFootPrint);
-                if(spwnLocations.Contains(spwnPoint)) continue;
-                building.transform.position = spwnPoint;
-                building.transform.localScale = new Vector3(20, 20, 20);
-                building.GetComponent<buildingCollsion>().parentCenterPoint = reg.centerPoint;
-                spwnLocations.Add(spwnPoint);                
+        //Alpha 1 building placement code
+        // List<Vector3> spwnLocations = new List<Vector3>();
+        // int buildingFootPrint = 3;
+        // foreach (RegionBorder reg in regions){
+        //     for (int i = 0; i < 10; i++){
+        //         GameObject buildingParent = GameObject.Find("buildingParent");
+        //         GameObject building = Instantiate(buildings[Random.Range(0, buildings.Length - 1)], buildingParent.transform);
+        //         Vector3 spwnPoint = reg.centerPoint + new Vector3(Random.Range(1, 400) * buildingFootPrint, 0, Random.Range(1, 400) * buildingFootPrint);
+        //         if(spwnLocations.Contains(spwnPoint)) continue;
+        //         building.transform.position = spwnPoint;
+        //         building.transform.localScale = new Vector3(20, 20, 20);
+        //         building.GetComponent<buildingCollsion>().parentCenterPoint = reg.centerPoint;
+                
+        //         spwnLocations.Add(spwnPoint);                
+        //     }
+        // }
+        
+        for(int i = 0; i < borders.Count; i++){
+            
+            GameObject parent = borders[i];
+            GameObject buildingParent = GameObject.Find("buildingParent");
+            Transform front = GetChildWithName(parent, "front").transform;
+            Transform back = GetChildWithName(parent, "back").transform;
+            Vector3 buildingFootprint =  buildings[0].GetComponent<MeshRenderer>().bounds.size;
+            float numberOfBuildings =  Mathf.Floor(Vector3.Distance(front.position, back.position)/buildingFootprint.x/2) - 2f;
+            // Buildings on the right side of the road
+            Vector3 spwnPosition = parent.transform.position - parent.transform.right * parent.transform.localScale.magnitude/2 + parent.transform.forward * 45f;
+            for(int j = 0; j < numberOfBuildings; j++){
+                GameObject building = Instantiate(buildings[0]);
+                spwnPosition += parent.transform.right * (buildingFootprint.x + 10f);
+                building.transform.position = spwnPosition;
+                building.transform.localScale = new Vector3(8, 8, 8);
+                building.transform.localRotation = parent.transform.localRotation * Quaternion.Euler(0f, 180f, 0f);
+            }
+            // Buildings on the right side of the road
+            spwnPosition = parent.transform.position + -parent.transform.right * parent.transform.localScale.magnitude/2 + -parent.transform.forward * 45f;
+            for(int k = 0; k < numberOfBuildings; k++){
+                GameObject building = Instantiate(buildings[0]);
+                spwnPosition += parent.transform.right * (buildingFootprint.x + 10f);
+                building.transform.position = spwnPosition;
+                building.transform.localScale = new Vector3(8, 8, 8);
+                building.transform.localRotation = parent.transform.localRotation;
             }
         }
+        
+        
+
     }
 
     private List<Vector2f> CreateRandomPoints(){
@@ -72,58 +106,52 @@ public class cityBuilder : MonoBehaviour
             RegionBorder region = new RegionBorder(kv.Value.SiteIndex, new Vector3(kv.Key.x, 0, kv.Key.y));
             regions.Add(region);
         }
-
+        int count = 0;
         //Place the black 
         foreach (Edge edge in edges){
             if(edge.ClippedEnds == null) continue;
-            PlaceRoads(edge.ClippedEnds[LR.LEFT], edge.ClippedEnds[LR.RIGHT]);
+            PlaceRoads(edge.ClippedEnds[LR.LEFT], edge.ClippedEnds[LR.RIGHT], count);
+            count++;
         }
         
     }
     
-    private void PlaceRoads(Vector2f p0, Vector2f p1, int offset = 0) {
+    private void PlaceRoads(Vector2f p0, Vector2f p1, int index, int offset = 0) {
         int x0 = (int)p0.x;
         int x1 = (int)p1.x;
         int y0 = (int)p0.y;
         int y1 = (int)p1.y;
-
-        // Alpha 2 code that spawn single blocks
-        // int dx = Mathf.Abs(x1 - x0);
-        // int dy = Mathf.Abs(y1 - y0);
-        // int sx = x0 < x1 ? 1 : -1;
-        // int sy = y0 < y1 ? 1 : -1;
-        // int err = dx - dy;
         
-        // while(true){
-        //     GameObject line = Instantiate(roads[0], new Vector3(x0+offset, 0, y0+offset), Quaternion.Euler(0, 0, 0));
-        //     if(x0 == x1 && y0 == y1) break;
-        //     int e2 = 2*err;
-        //     if (e2 > -dy){
-        //         err -= dy;
-        //         x0 += sx;
-        //     }
-        //     if (e2 < dx) {
-        //         err += dx;
-        //         y0 += sy;
-        //     }
-        // }
-
-
-        
-
-        GameObject road = Instantiate(roads[0]);
+        // alpha 2 road generation code
         Vector3 dir = new Vector3(x0, 0, y0) - new Vector3(x1, 0, y1);
+        if(dir.magnitude - 40f <= 30f) return;
+        GameObject road = Instantiate(roads[0]);
+        GameObject roadManager = GameObject.Find("roadParent");
+        
         Vector3 centerPos = new Vector3(x0 + x1, 0, y0 + y1) / 2f;
-        float scaleX = Mathf.Abs(x0 - x1);
-        borders.Add(centerPos);
+        borders.Add(road);
 
-        //Itersection idea - create a vector to get the repeated positions, and create insersections there
+        
 
         centerPos.x -= 0.5f;
         centerPos.y += 0.5f;
         road.transform.position = centerPos;
-        road.transform.localScale = new Vector3(dir.magnitude, 0.5f, 60);
+        road.transform.localScale = new Vector3(dir.magnitude - 40f, 0.5f, 60); // dir.magnitude
         road.transform.localRotation = Quaternion.FromToRotation(new Vector3(1, 0, 0),  dir);
+        road.transform.parent = roadManager.transform;
+        road.name = "road" + index;
+
+    }
+
+    private GameObject GetChildWithName(GameObject obj, string name){
+        Transform trans = obj.transform;
+        Transform childTrans = trans.Find(name);
+        if(childTrans != null){
+            return childTrans.gameObject;
+        }
+        else {
+            return null;
+        }
     }
 
     

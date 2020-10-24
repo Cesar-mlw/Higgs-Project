@@ -120,6 +120,13 @@ The first three stages of our alpha build were assembled during 2020's first sem
 <img src="version photos/alpha4.png"/>
 <img src="version photos/alpha4-2.png"/>
 
+#### Version 5 - Map Generation
+<img src="version photos/alpha5.png"/>
+
+#### Version 6 - Map Generation
+<img src="version photos/alpha6.png"/>
+<img src="version photos/alpha6-2.png"/>
+
 #### Version 1 - Visual Effects
 <img src="version photos/alphafx1.png"/>
 

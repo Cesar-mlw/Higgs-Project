@@ -21,9 +21,7 @@ public class buildingCollsion : MonoBehaviour{
     }
 
     private void RepositionBuilding() {
-        Vector3 spwnPoint = this.parentCenterPoint + new Vector3(Random.Range(1, 400) * buildingFootprint, -0.5f, Random.Range(1, 400) * buildingFootprint);
-        Debug.Log("Building Repositioned");
-        gameObject.transform.position = spwnPoint;
+        Destroy(gameObject);
     }
 
 }
