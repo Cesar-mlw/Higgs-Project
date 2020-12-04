@@ -136,7 +136,7 @@ The first three stages of our alpha build were assembled during 2020's first sem
 #### Version 3 - Visual Effects
 <img src="version photos/alphafx3.png"/>
 
-#### Final Versiona - Available for free download!
+#### Final Versions - Available for free download!
 link - https://cretive-model-games.itch.io/higgs-project
 
 ### License
@@ -169,5 +169,10 @@ SOFTWARE.
 ---
 
 ### Agradecimentos
+GameLab ESPM
+Mauro Miguel Berimbau (Paladim Pudim)
+Matheus Matsuda Marangoni
+Vicente Martin Mastrocola (Vince Vader)
+TECH-ESPM
 ---
 
