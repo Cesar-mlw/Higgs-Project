@@ -169,10 +169,12 @@ SOFTWARE.
 ---
 
 ### Agradecimentos
-GameLab ESPM
-Mauro Miguel Berimbau (Paladim Pudim)
-Matheus Matsuda Marangoni
-Vicente Martin Mastrocola (Vince Vader)
-TECH-ESPM
+- GameLab ESPM
+- Mauro Miguel Berimbau (Paladim Pudim)
+- Matheus Matsuda Marangoni
+- Vicente Martin Mastrocola (Vince Vader)
+- Flávio Marques Azevedo
+- TECH-ESPM
+- ESPM-SP
 ---
 
